@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Test 1</title>
+    <style>
+      table, th, td {
+        border: 1px solid black; font-family: Arial, Helvetica, sans-serif;padding:10px 5px;
+      }
+      p, h3, a {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  </style>
+</head>
+<body>
+    <table style=border-collapse:collapse;border-spacing:0;width:100%>
+        <colgroup>
+        <col style="width: 18%">
+        <col style="width: 28%">
+        <col style="width: 10%">
+        <col style="width: 34%">
+        <col style="width: 10%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th><img src="https://alfamidiku.com/medias/content/content-1526297838.png" width="100" height="75"></th>
+            <th colspan="4">FORMULIR PEMESANAN TIKET KERETA API<br><i>ticket reservation form</i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="background-color:#3675bc;font-weight:bold" colspan="5">Data Pemesan / <i>data of person making the reservation</i></td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">NAMA / <i>name</i></td>
+            <td colspan="4">
+                <form>
+                    <input style="width: 98%;" type="text" id="name" name="name">
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">ALAMAT / <i>address</i></td>
+            <td colspan="4">
+                <form>
+                    <textarea name="address" id="address" style="width: 98%;height: 15px"></textarea>
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">TELEPON / <i>telephone</i></td>
+            <td colspan="4">
+                <form>
+                    <input style="width: 98%;" type="number" id="phone" name="phone">
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#3675bc;font-weight:bold" colspan="5">DATA PENUMPANG / <i>passenger details</i></td>
+          </tr>
+          <tr>
+            <td style="background-color:#3675bc"></td>
+            <td style="background-color:#cdcfe8" colspan="2">PENUMPANG 1 / <i>passenger 1</i></td>
+            <td style="background-color:#cdcfe8" colspan="2">PENUMPANG 2 / <i>passenger 2</i></td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">NAMA / <i>name</i></td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="text" id="lname" name="lname">
+                </form>
+            </td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="text" id="lname" name="lname">
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">NO IDENTITAS / <i>ID</i></td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="number" id="uid" name="uid">
+                </form>
+            </td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="number" id="uid" name="uid">
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">TIPE PNP / <i>type</i></td>
+            <td style="background-color:#cdcfe8" colspan="2">
+                <form>
+                    <input type="radio" name="age" value="Dewasa"> Dewasa (<i>adult</i>) <br>
+                    <input type="radio" name="age" value="Bayi"> Bayi (<i>infant</i>) non seat
+                </form>
+            </td>
+            <td style="background-color:#cdcfe8" colspan="2">
+                <form>
+                    <input type="radio" name="age" value="Dewasa"> Dewasa (<i>adult</i>) <br>
+                    <input type="radio" name="age" value="Bayi"> Bayi (<i>infant</i>) non seat
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+                <ul>
+                    <li><b>Tipe penumpang</b><br>Bayi yaitu usia dibawah tiga tahun, dewasa yaitu usia tiga tahun atau lebih.<br><br></li>
+                    <li><b>Nama dan nomor identitas</b> harus sesuai dengan yang tertera pada Kartu identitas yang dimiliki Penumpang (KTP/SIM/Paspor/Railcard dll), apabila usia penumpang dibawah 17 tahun dapat diisi dengan tanggal lahir penumpang bersangkutan dengan format ddmmyy</li>
+                </ul>
+            </td>
+            <td colspan="2">
+                <ul>
+                    <li><i><b>Passenger type</b><br>Passengers under three years old is categorized as an infant, aged three years old or more are adult.<br><br></i></li>
+                    <li><i><b>Ensure your Name and ID number</b> match your identity card (KTP / SIM / Passport / Railcard etc), for passangers under 17 years old. ID column may be filled by their date of birth with format ddmmyy</i></li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#3675bc;font-weight:bold" colspan="5">DATA PERJALANAN / <i>booking details</i></td>
+          </tr>
+          <tr>
+            <td style="background-color:#3675bc"></td>
+            <td style="background-color:#cdcfe8" colspan="2">PERGI / <i>depart</i></td>
+            <td style="background-color:#cdcfe8" colspan="2">PULANG / <i>return</i></td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">NAMA KERETA API /<br><i>train name</i></td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="text" id="train" name="train">
+                </form>
+            </td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="text" id="train" name="train">
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">KELAS / <i>class</i></td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="text" id="class" name="class">
+                </form>
+            </td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="text" id="class" name="class">
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">ASAL / <i>origin</i></td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="text" id="origin" name="origin">
+                </form>
+            </td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="text" id="origin" name="origin">
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">TUJUAN / <i>destination</i></td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="text" id="destination" name="destination">
+                </form>
+            </td>
+            <td colspan="2">
+                <form>
+                    <input style="width: 98%;" type="text" id="destination" name="destination">
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#cdcfe8">JADWAL BERANGKAT / <i>departure</i></td>
+            <td>
+                <form>
+                    <label for="date">TANGGAL / <i>date</i> </label>
+                    <input type="date" id="date" name="date">
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="time">JAM / <i>time</i></label>
+                    <input type="time" id="time" name="time">
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="date">TANGGAL / <i>date</i> </label>
+                    <input type="date" id="date" name="date">
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="time">JAM / <i>time</i></label>
+                    <input type="time" id="time" name="time">
+                </form>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        <br>
+        <form>
+            <input type="submit" value="Submit" style="margin-left:50%;height: 50px;width: 100px;">
+        </form>
+        <br>
+        <h3>Nikmati Kemudahan reservasi dari:</h3>
+        <p>Andi Rachmad Triandika Rusli<br>2109106132</p>
+        <a href="https://classroom.google.com/u/1/c/NTQ2MTg4NDgzNTkw/a/NTQ4NTAxMDA2MDIz/details">Link Google Classroom Post Test 1</a>
+</body>
+</html>
